@@ -1,0 +1,42 @@
+﻿@using Day2_03.Models
+@model  Employee
+
+
+<h3>Edit Employee Details</h3>
+
+ 
+<form  action="/Employee/Edit" method="post">
+    <label>Employee Id  : </label>
+    <input name="EmployeeId" type="text" readonly value="@Model.EmployeeId" />
+    <br/><br/>
+
+    <label>Employee Name  : </label>
+    <input name="EmployeeName" type="text" value="@Model.EmployeeName" />
+    <br/><br/>
+
+     <label>Job : </label>
+    <input name="Job" type="text" value="@Model.Job" />
+    <br/><br/>
+
+    <label>Sal  : </label>
+    <input name="Sal" type="text" value="@Model.Sal" />
+    <br/><br/>
+
+    <label>Deptno  : </label>
+    <input name="Deptno" type="text" value="@Model.Deptno" />
+    <br/><br/>
+
+    <input type="submit" value="Edit" />
+</form>
+
+
+@{
+    if(ViewBag.RequestType == "POST")
+    {
+        <h1>@ViewBag.ErrorMessage</h1>
+    }
+}
+
+
+<hr/>
+ <a href="/Employee/Index">Back to List</a>

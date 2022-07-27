@@ -1,0 +1,23 @@
+﻿@using Day2_03.Models
+@model  Employee
+
+
+<h3>Dp you want to delete this Employee?</h3>
+
+
+<div>
+    Employee Id  :  @Model.EmployeeId  <br/>
+    Employee Namee :  @Model.EmployeeName  <br/>
+    Job  :  @Model.Job<br/>
+    Sal  :  @Model.Sal<br/>
+    Deptno  :  @Model.Deptno<br/>
+
+</div>
+
+<form  action="/Employee/Delete" method="post">
+     <input name="id" type="hidden" value="@Model.EmployeeId" />
+     <input type="submit" value="Delete" />
+</form>
+
+<hr/>
+ <a href="/Employee/Index">Back to List</a>
