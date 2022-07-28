@@ -1,0 +1,45 @@
+INFO  03:26:08 Now listening on: https://localhost:7068
+INFO  03:26:08 Now listening on: http://localhost:5068
+INFO  03:26:08 Application started. Press Ctrl+C to shut down.
+INFO  03:26:08 Hosting environment: Development
+INFO  03:26:08 Content root path: C:\Users\Administrator\source\repos\Day3-02\Day3-02\
+INFO  03:26:14 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  03:26:17 Executed DbCommand (191ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Employee_Name], [e].[Job], [e].[Sal]
+FROM [Employees] AS [e]
+INFO  03:26:27 Index Action is Processed.
+INFO  03:26:33 Index Action is Processed.
+INFO  10:32:48 Now listening on: https://localhost:7068
+INFO  10:32:48 Now listening on: http://localhost:5068
+INFO  10:32:48 Application started. Press Ctrl+C to shut down.
+INFO  10:32:48 Hosting environment: Development
+INFO  10:32:48 Content root path: C:\Users\Administrator\source\repos\Day3-02\Day3-02\
+ERROR 10:32:49 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'Day3_02.Controllers.EmployeeController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass10_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:34:49 Now listening on: https://localhost:7068
+INFO  10:34:49 Now listening on: http://localhost:5068
+INFO  10:34:49 Application started. Press Ctrl+C to shut down.
+INFO  10:34:49 Hosting environment: Development
+INFO  10:34:49 Content root path: C:\Users\Administrator\source\repos\Day3-02\Day3-02\
+INFO  10:34:50 Index Action is Processed.
+INFO  10:34:53 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  10:34:55 Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Employee_Name], [e].[Job], [e].[Sal]
+FROM [Employees] AS [e]
+INFO  10:35:02 Index Action is Processed.
+INFO  10:35:18 Index Action is Processed.
+INFO  10:35:18 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  10:35:18 Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Employee_Name], [e].[Job], [e].[Sal]
+FROM [Employees] AS [e]
