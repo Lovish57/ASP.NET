@@ -1,0 +1,33 @@
+INFO  11:41:32 Now listening on: https://localhost:7068
+INFO  11:41:32 Now listening on: http://localhost:5068
+INFO  11:41:32 Application started. Press Ctrl+C to shut down.
+INFO  11:41:32 Hosting environment: Development
+INFO  11:41:32 Content root path: C:\Users\Administrator\source\repos\Day3-02\Day3-02\
+INFO  11:41:34 Index Action is Processed.
+INFO  11:41:37 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  11:41:40 Executed DbCommand (183ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Employee_Name], [e].[Job], [e].[Sal]
+FROM [Employees] AS [e]
+INFO  11:42:19 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  11:42:20 Executed DbCommand (166ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Deptno], [Employee_Name], [Job], [Sal])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [EmployeeId]
+FROM [Employees]
+WHERE @@ROWCOUNT = 1 AND [EmployeeId] = scope_identity();
+INFO  11:42:20 Index Action is Processed.
+INFO  11:42:21 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  11:42:21 Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Employee_Name], [e].[Job], [e].[Sal]
+FROM [Employees] AS [e]
+INFO  11:59:42 Now listening on: https://localhost:7068
+INFO  11:59:42 Now listening on: http://localhost:5068
+INFO  11:59:42 Application started. Press Ctrl+C to shut down.
+INFO  11:59:42 Hosting environment: Development
+INFO  11:59:42 Content root path: C:\Users\Administrator\source\repos\Day3-02\Day3-02\
+INFO  11:59:43 Index Action is Processed.
+INFO  11:59:46 Entity Framework Core 6.0.7 initialized 'EmployeeDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.7' with options: None
+INFO  11:59:48 Executed DbCommand (160ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [e].[EmployeeId], [e].[Deptno], [e].[Employee_Name], [e].[Job], [e].[Sal]
+FROM [Employees] AS [e]
